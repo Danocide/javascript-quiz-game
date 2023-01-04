@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+#header {
+    background: aquamarine;
+    text-align: center;
+    min-height: 20px;
+    width: 100%;
+
+}
+
+nav {
+    text-align: left;
+}
+
+#timer{
+    text-align: center;
+    
+}
+
+.gameWindow {
+    display: flex;
+    justify-content: center;
+    /* background: black; */
+    min-height: 300px;
+    min-width: 300px;
+    margin: 0;
+
+}
+
+.card {
+    background: radial-gradient(circle, rgba(240,230,140,1) 0%, rgba(187,124,33,0.604079131652661) 100%);
+    border: 1px solid #eceff1;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
+      rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
+    margin: auto;
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+  }
+
+  #preGameBox {
+    text-align: center;
+
+  }
+
+  #startBtn {
+    font-size: 16px;
+    padding: 0.5em 1.8em;
+    margin-top: 20%;
+    height: 32px;
+    text-align: bottom;
+    vertical-align: middle;
+    justify-content: space-around;
+  }
+
+  #question-counter {
+    text-align: center;
+  }

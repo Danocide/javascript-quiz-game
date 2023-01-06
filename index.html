@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <header>
-        <div id="header">
+    <header id="header">
+        <div>
             <h1>
                 Coding Quiz
              </h1>
@@ -20,25 +20,46 @@
                 <a href="./highscores.html">High Scores</a>
             </nav>
             <h2 id="timer">
-                Timer:
+                Timer: <span id="countdown">0</span>
             </h2>
             </div>
     </header>
 
     <main>
         <!-- creating a specific game window -->
-        <div class="card gameWindow">
-            <h2 id="preGameBox">Test your knowledge in HTML, CSS, and JavaScript! Answer all questions before the time
-                limit is over to get a score!</h2>
+        <section>
+            <div>
+                <button class="center" id="startBtn">Start!</button>
+             </div>
+            <div class="card gameWindow">
+                <h2 id="preGameBox">Test your knowledge in HTML, CSS, and JavaScript! Answer all questions before the time
+                    limit is over to get a score!</h2>
+            </div>
+             <div>
+                <section class="hide" id="questionBox">
+                    <h2 class="card gameWindow question">
+                        <div id="answerOptions" class="answers">
+                            
 
-            <button id="startBtn">Start!</button>
-        </div>
+                        </div>
+                    </h2>
+                </section>
+            </div>
         <!-- display for counting questions/showing total ammount of questions -->
-        <div id="question-counter">
-            <p>
-                X of X questions
-            </p>
-        </div>
+            <div id="question-counter">
+                <p>
+                    X of 5 questions
+                </p>
+            </div>
+        </section>
+
+        <section id="gameOver" class="">
+            <h2>Game Over! How did you comapre to your other competitors? Check the highscore page after you submit your score!</h2>
+            <p>Score: <span id="endScore"></span></p>
+            <p>Enter your initials here: <input type="text" id="user"><button>Submit your score</button></p>
+        </section>
+
+        <script src="./assets/js/script.js"></script>
     </main>
 </body>
 

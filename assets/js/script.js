@@ -134,5 +134,3 @@ function saveScore() {
 }
 
 startBtn.addEventListener("click", start);
-// choicesEl.addEventListener("click", questionResponse);
-// submitBtn.addEventListener("click", saveHighscore);
